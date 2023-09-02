@@ -26,5 +26,5 @@ export const NAVIGATION_THEME = {
   },
 };
 
-export const APP_PRIMARY_TEXT = Colors.BLACK;
+export const APP_PRIMARY_TEXT = Colors.GREYISH_BROWN;
 export const APP_PRIMARY_COLOR = Colors.PALE_TEAL;

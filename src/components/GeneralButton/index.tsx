@@ -4,7 +4,7 @@ import {Text, TouchableOpacity} from 'react-native';
 type Props = {
   style: {};
   onPress?: () => void;
-  textStyle: {};
+  textStyle: any;
   text: string;
 };
 
