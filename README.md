@@ -46,34 +46,22 @@ If everything is set up _correctly_, you should see your new app running in your
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-## Step 3: Modifying your App
+## Tasks Progress
 
-Now that you have successfully run the app, let's modify it.
+1. **Smooth Execution**: The project development went smoothly, with a focus on maintaining consistency and efficiency throughout the process.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+2. **Folder Structure**: A simple and standard folder structure was established to organize the project files effectively. This structure ensures clarity and ease of navigation for both current and future contributors.
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+3. **Library Integration**: The required libraries were successfully integrated into the project. This step ensures that the project benefits from essential functionalities and capabilities provided by these libraries.
 
-## Congratulations! :tada:
+4. **Alpha Implementation**: The alpha version of the project has been implemented, complete with dummy data. This initial implementation serves as a foundational step, allowing for further development and testing.
 
-You've successfully run and modified your React Native App. :partying_face:
+5. **Localization**: I have recently implemented localization in one of my previous projects, [Frnz](https://play.google.com/store/apps/details?id=com.frnz.app&hl=en&gl=US). Feel free to check out the project to see the localization in action as I've didn't got much time to implement Localization.
 
-### Now what?
+## Feedback and Questions
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+If you have any feedback, questions, or additional requirements related to the project, please don't hesitate to reach out. Your input is highly valued and will contribute to the project's success.
 
-# Troubleshooting
+Thank you for your interest and support!
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+**P.S:** You can reach me at [shoaiburrehman249@outlook.com] for any inquiries or collaboration opportunities.
