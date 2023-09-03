@@ -11,9 +11,9 @@ const TextInputHOC = (props: InputProps) => {
     <TextInput
       ref={inputRef}
       style={[styles.input, style]}
-      selectionColor={Colors.Colors.PINK}
+      selectionColor={Colors.Colors.PALE_TEAL}
       {...(!!placeholder && {
-        placeholderTextColor: Colors.Colors.STEEL,
+        placeholderTextColor: Colors.Colors.WARM_GREY,
         placeholder,
       })}
       {...rest}

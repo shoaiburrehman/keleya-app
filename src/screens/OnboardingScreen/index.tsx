@@ -7,9 +7,10 @@ import { vh, vw } from '../../themes/units';
 import { images } from '../../assets';
 import GeneralButton from '../../components/GeneralButton';
 import LinkButton from '../../components/LinkButton';
+import NavigationRoutes from '../../navigations/NavigationRoutes';
 
 
-const Onboarding = () => {
+const Onboarding = (props) => {
     const carouselRef = useRef();
     const [currentIndex, setCurrentIndex] = useState<number>(0);
 
@@ -61,7 +62,8 @@ const Onboarding = () => {
                 <LinkButton
                     text="Or login"
                     style={styles.loginBtn}
-                    textStyle={styles.loginText} 
+                    textStyle={styles.loginText}
+                    onPress={() => props?.navigation?.navigate(NavigationRoutes.SIGNIN)}
                 />
                 {pagination()}
             </View>

@@ -17,6 +17,7 @@ import {
   View,
 } from 'react-native';
 import Navigation from './src/navigations';
+import { Colors } from './src/themes/Colors';
 
 function App(): JSX.Element {
 
