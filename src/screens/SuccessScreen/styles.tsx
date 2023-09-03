@@ -34,14 +34,14 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         alignSelf: 'center',
     },
-    logoImg: {
+    bellImg: {
         resizeMode: 'contain',
-        width: vw * 25,
-        height: vw * 25
+        width: vw * 12,
+        height: vw * 12
     },
     logoText: {
         ...Fonts.Regular(16),
-        marginTop: vh,
+        marginTop: vh * 3,
         textAlign: 'center',
         width: '80%'
     },
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     notifBtn: {
-        marginBottom: vh * 2,
+        marginBottom: vh * 3,
     },
     notifText: {
         ...Fonts.Bold(16),

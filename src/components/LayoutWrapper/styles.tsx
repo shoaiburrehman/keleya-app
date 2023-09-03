@@ -8,9 +8,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     alignSelf: 'center',
     justifyContent: 'center',
-    backgroundColor: Colors.WHITE
+    backgroundColor: Colors.WHITE,
   },
   backgroundStyle: {
+    marginTop: vh * 15,
     height: vh * 50,
     width: vw * 100
   }

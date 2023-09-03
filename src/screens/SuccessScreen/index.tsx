@@ -15,7 +15,7 @@ const Success = (props) => {
             <View style={styles.imageContainer}>
                 <Image source={images.notifBgImg} style={styles.carouselImage} />
                 <View style={styles.logoContainer}>
-                    <Image source={icons.bell} style={styles.logoImg} />
+                    <Image source={icons.bell} style={styles.bellImg} />
                     <Text style={styles.logoText}>For a fit and relaxed pregnancy.</Text>
                 </View>
             </View>

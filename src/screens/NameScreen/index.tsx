@@ -6,9 +6,10 @@ import GeneralButton from '../../components/GeneralButton';
 import LayoutWrapper from '../../components/LayoutWrapper';
 import InputField from '../../components/InputField';
 import { Fonts } from '../../themes';
+import NavigationRoutes from '../../navigations/NavigationRoutes';
 
 
-const Name = () => {
+const Name = (props: any) => {
     const [name, setName] = useState<string>('');
 
     return(
@@ -27,6 +28,7 @@ const Name = () => {
                     text={'Continue'}
                     style={[styles.btn]}
                     textStyle={styles.btnText}
+                    onPress={() => props?.navigation.navigate(NavigationRoutes.DATE)}
                 />
             </View>
         </LayoutWrapper>

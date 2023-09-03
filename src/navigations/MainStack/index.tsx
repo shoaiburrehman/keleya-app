@@ -7,6 +7,7 @@ import SignIn from '../../screens/SignInScreen';
 import SignUp from '../../screens/SignUpScreen';
 import Name from '../../screens/NameScreen';
 import Success from '../../screens/SuccessScreen';
+import DateScreen from '../../screens/DateScreen';
 
 const RootStack = createStackNavigator();
 
@@ -37,6 +38,11 @@ const MainNavigator = () => {
       <RootStack.Screen
         name={NavigationRoutes.SUCCESS}
         component={Success}
+        options={navigationOptions}
+      />
+      <RootStack.Screen
+        name={NavigationRoutes.DATE}
+        component={DateScreen}
         options={navigationOptions}
       />
       

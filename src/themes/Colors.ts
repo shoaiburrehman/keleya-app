@@ -6,6 +6,8 @@ export const Colors = {
   GREYISH_BROWN: "#4a4a4a",
   WARM_GREY: "#9b9b9b",
   BUBBLE_GUM: "#e97db5",
+  LIGHT_GREY: "#d9d9d9",
+  BLUE: "#103bc7"
 };
 
 export const APP_SHADOW = {

@@ -9,8 +9,8 @@ const navigationOptions = (navProps: any) => {
   return {
     headerTitle: () => getTitle(navProps),
     headerLeft: () => renderHeaderLeft(navProps),
-    headerBackVisible: false,
     headerTitleAlign: 'center',
+    headerTransparent: true,
     headerLeftContainerStyle: {paddingLeft: 4 * vw},
     headerRightContainerStyle: {paddingRight: 4 * vw},
     headerStyle: getHeaderStyle(navProps),
@@ -21,7 +21,6 @@ const getHeaderStyle = (props: any) => {
   return {
     shadowColor: 'transparent',
     backgroundColor: Colors.WHITE,
-    height: 14 * vh,
     maxHeight: 20 * vh,
     elevation: 0, // remove shadow on Android
     shadowOpacity: 0, // remove shadow on iOS
