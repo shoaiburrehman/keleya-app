@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
     },
     imageContainer: {
         flex: 1,
+        marginTop: vh * 14,
     },
     carouselImage: {
         height: vh * 100,

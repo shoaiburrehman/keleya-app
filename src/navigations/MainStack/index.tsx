@@ -8,6 +8,7 @@ import SignUp from '../../screens/SignUpScreen';
 import Name from '../../screens/NameScreen';
 import Success from '../../screens/SuccessScreen';
 import DateScreen from '../../screens/DateScreen';
+import Workout from '../../screens/Workout';
 
 const RootStack = createStackNavigator();
 
@@ -43,6 +44,11 @@ const MainNavigator = () => {
       <RootStack.Screen
         name={NavigationRoutes.DATE}
         component={DateScreen}
+        options={navigationOptions}
+      />
+      <RootStack.Screen
+        name={NavigationRoutes.WORKOUT}
+        component={Workout}
         options={navigationOptions}
       />
       

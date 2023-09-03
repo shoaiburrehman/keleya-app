@@ -6,9 +6,10 @@ import styles from './styles';
 import { images } from '../../assets';
 import GeneralButton from '../../components/GeneralButton';
 import LayoutWrapper from '../../components/LayoutWrapper';
+import NavigationRoutes from '../../navigations/NavigationRoutes';
 
 
-const DateScreen = () => {
+const DateScreen = (props: any) => {
     const [date, setDate] = useState(new Date());
     const [open, setOpen] = useState<boolean>(false);
 
@@ -25,6 +26,7 @@ const DateScreen = () => {
                     text={'Continue'}
                     style={[styles.btn]}
                     textStyle={styles.btnText}
+                    onPress={() => props?.navigation.navigate(NavigationRoutes.WORKOUT)}
                 />
             </View>
             <DatePicker
