@@ -14,7 +14,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     welcomeBack: {
-        ...Fonts.Medium(18)
+        ...Fonts.Medium(18),
+        textAlign: 'center'
     },
     forgottenText: {
         marginBottom: vh * 3

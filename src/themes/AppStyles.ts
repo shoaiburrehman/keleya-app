@@ -15,7 +15,7 @@ const centerAlign = {
 
 const inputControl = {
   flex: 1,
-  ...(Platform.OS === 'ios' && {height: vh * 10}),
+  height: Platform.OS === 'ios' ? vh * 10 : vh * 6,
   ...Fonts.Medium(16, Colors.WARM_GREY),
 };
 

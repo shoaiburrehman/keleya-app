@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
   },
 
   iconContainer: {
-    marginTop: vh,
+    marginVertical: vh,
     width: vw * 20,
     marginLeft: vw * 4,
     alignItems: 'flex-end',

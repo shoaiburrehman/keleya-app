@@ -58,6 +58,7 @@ const Onboarding = (props) => {
                     text={'Get Started'}
                     style={[styles.btn]}
                     textStyle={styles.btnText}
+                    onPress={() => props?.navigation?.navigate(NavigationRoutes.SIGNUP)}
                 />
                 <LinkButton
                     text="Or login"
