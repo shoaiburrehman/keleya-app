@@ -56,7 +56,7 @@ This is one way to run your app — you can also run it directly from within And
 
 4. **Alpha Implementation**: The alpha version of the project has been implemented, complete with dummy data. This initial implementation serves as a foundational step, allowing for further development and testing.
 
-5. **Localization**: I have recently implemented localization in one of my previous projects, [Frnz](https://play.google.com/store/apps/details?id=com.frnz.app&hl=en&gl=US). Feel free to check out the project to see the localization in action as I've didn't got much time to implement Localization.
+5. **Localization**: I have recently implemented localization in one of my previous projects, [Frnz](https://play.google.com/store/apps/details?id=com.frnz.app&hl=en&gl=US). Feel free to check out the project to see the localization in action as I've didn't got much time to implement Localization in this project.
 
 ## Feedback and Questions
 
