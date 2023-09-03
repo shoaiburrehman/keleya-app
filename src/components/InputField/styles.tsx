@@ -5,6 +5,7 @@ import {APP_SHADOW, Colors} from '../../themes/Colors';
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     marginVertical: vh * 1.5,
   },
   titleText: {
@@ -18,24 +19,24 @@ const styles = StyleSheet.create({
   },
   textInputContainer: {
     width: '100%',
-    alignItems: 'center',
+    marginTop: vh,
     flexDirection: 'row',
     borderRadius: vw * 2,
-    justifyContent: 'center',
     paddingHorizontal: vw * 4,
-    backgroundColor: Colors.WHITE,
-    ...APP_SHADOW,
+    borderBottomColor: Colors.BLACK,
+    borderBottomWidth: 1,
   },
 
   iconContainer: {
     marginTop: vh,
     width: vw * 20,
     marginLeft: vw * 4,
+    alignItems: 'flex-end',
+    alignSelf: 'flex-end',
   },
   icon: {
     height: vh * 4,
     width: vw * 4,
-    tintColor: Colors.PRIMARY_COLOR,
   },
   fieldTypeView: {
     marginTop: vh * 2,
@@ -44,13 +45,9 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start',
     justifyContent: 'center',
   },
-  fieldType: {
-    ...Fonts.Regular(Fonts.Size.small, Colors.PRIMARY_COLOR),
-  },
   textInput: {
-    ...Fonts.Regular(12, Colors.PLACE_HOLDER),
+    ...Fonts.Regular(12, Colors.GREYISH_BROWN),
     marginTop: vw,
-    // backgroundColor: 'red',
   },
   pickerContainer: {
     alignItems: 'flex-end',
@@ -60,7 +57,7 @@ const styles = StyleSheet.create({
   },
   picker: {
     width: '100%',
-    color: Colors.PRIMARY_COLOR,
+    color: Colors.BLACK,
   },
 });
 

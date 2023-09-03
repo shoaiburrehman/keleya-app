@@ -7,8 +7,10 @@ import styles from './styles';
 const LayoutWrapper = (props) => {
   return (
     <View style={styles.container}>
-      <Image source={props.background} style={[styles.backgroundStyle, props?.backgroundStyle]} />
-      {props.children}
+      <KeyboardAwareScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{flexGrow: 1}}>
+        <Image source={props.background} style={[styles.backgroundStyle, props?.backgroundStyle]} />
+        {props.children}
+      </KeyboardAwareScrollView>
     </View>
   );
 };

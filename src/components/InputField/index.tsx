@@ -45,54 +45,45 @@ const options = [
 ];
 
 const InputField = React.forwardRef((props: Props, ref: Ref) => {
-  const handleIconPress = () => {
-    if (props?.onPress) {
-      props?.onPress();
-    }
+  const [isShow, setIsShow] = useState(false);
+
+  const handlePassword = () => {
+    setIsShow(!isShow);
   };
 
   const getInputWidth = () => {
     let width = vw * 72;
-
+    if (props.secureTextEntry) {
+      width -= vw * 10;
+    }
     return width;
   };
 
   return (
     <View style={[styles.container, props?.style]}>
-      {props?.title && (
-        <Text style={[styles.titleText, props.titleTextStyle]}>
-          {props?.title}
-        </Text>
-      )}
-      <View
-        style={[
-          styles.flex,
-          {width: props.icon ? '90%' : '100%'},
-        ]}>
         <View style={[styles.textInputContainer, props?.textInputContainer]}>
           <TextInputHOC
             ref={ref}
             {...props}
+            secureTextEntry={props.secureTextEntry && !isShow}
             style={[
               styles.textInput,
               {width: getInputWidth()},
               props?.textInputStyle,
             ]}
           />
+          {props.secureTextEntry && (
+            <TouchableOpacity
+              style={styles.iconContainer}
+              onPress={handlePassword}>
+              <Image
+                source={isShow ? icons.visible : icons.hidden}
+                style={styles.icon}
+                resizeMode="contain"
+              />
+            </TouchableOpacity>
+          )}
         </View>
-        {props.icon && (
-          <TouchableOpacity
-            style={styles.iconContainer}
-            onPress={handleIconPress}
-            activeOpacity={0.8}>
-            <Image
-              source={icons.delete}
-              style={styles.icon}
-              resizeMode="contain"
-            />
-          </TouchableOpacity>
-        )}
-      </View>
     </View>
   );
 });

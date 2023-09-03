@@ -8,53 +8,25 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     },
-    imageContainer: {
+    inputContainer: {
         flex: 1,
-    },
-    carouselImage: {
-        height: vh * 100,
-        width: vw * 100,
-    },
-    dotStyle: {
-        width: vw * 2.5,
-        height: vw * 2.5,
-        borderRadius: (vw * 2.5) / 2,
-        backgroundColor: Colors.Colors.PALE_TEAL,
-    },
-    inactiveDotStyle: {
-        width: vw * 2.5,
-        height: vw * 2.5,
-        borderRadius: (vw * 2.5) / 2,
-        backgroundColor: Colors.Colors.LIGHT_TEAL,
-    },
-    logoContainer: {
-        position: 'absolute',
-        top: vh * 10,
+        marginHorizontal: vw * 10,
         alignItems: 'center',
-        alignSelf: 'center',
     },
-    logoImg: {
-        resizeMode: 'contain',
-        width: vw * 25,
-        height: vw * 25
-    },
-    logoText: {
-        ...Fonts.Regular(16),
-        marginTop: vh,
-        textAlign: 'center',
-        width: '80%'
+    welcomeBack: {
+        ...Fonts.Medium(18)
     },
     btn: {
         marginHorizontal: vw * 5,
         width: vw * 75,
-        height: vh * 7.5,
+        height: vh * 8,
         borderRadius: vw * 2,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: Colors.APP_PRIMARY_COLOR,
+        backgroundColor: Colors.Colors.WARM_GREY,
     },
     btnText: {
-        ...Fonts.Regular(15, Colors.Colors.WHITE),
+        ...Fonts.Regular(16, Colors.Colors.WHITE),
         textAlign: 'center',
     },
     loginBtn: {
@@ -63,9 +35,10 @@ const styles = StyleSheet.create({
     loginText: {
         ...Fonts.Bold(16),
     },
-    paginationContainer: {
-        position: 'absolute',
-        bottom: vh,
+    bottomContainer: {
+        marginTop: vh * 10,
+        // position: 'absolute',
+        // bottom: vh * 4,
         alignItems: 'center',
     },
 })
