@@ -1,15 +1,13 @@
-import React, { useState, useRef } from 'react';
-import {View, Text, Image, TouchableOpacity, FlatList, ImageBackground, StatusBar} from 'react-native';
+import React from 'react';
+import {View, Text, Image} from 'react-native';
 import styles from './styles';
 import { icons, images } from '../../assets';
 import GeneralButton from '../../components/GeneralButton';
 import LinkButton from '../../components/LinkButton';
-import NavigationRoutes from '../../navigations/NavigationRoutes';
-import { vh, vw } from '../../themes/units';
 import LinearGradient from 'react-native-linear-gradient';
 
 
-const Success = (props) => {
+const Success = (props: any) => {
     return(
         <View style={styles.container}>
             <View style={styles.imageContainer}>

@@ -5,15 +5,21 @@ import { Colors, Fonts } from '../../themes';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor: Colors.Colors.WHITE
+    },
+    contentContainerStyle: {
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: vh * 15,
-        backgroundColor: Colors.Colors.WHITE
+    },
+    headerView: {
+        position: 'absolute',
+        top: vh * 15,
+        marginHorizontal: vw * 12,
     },
     inputContainer: {
         flex: 1,
-        justifyContent: 'center',
-        marginTop: vh * 6,
+        // justifyContent: 'center',
+        marginVertical: vh * 3,
         marginHorizontal: vw * 10,
     },
     headerText: {
@@ -58,7 +64,7 @@ const styles = StyleSheet.create({
     },
     backgroundStyle: {
         width: vw * 100,
-        height: vh * 40,
+        height: vh * 80,
     },
     bottomContainer: {
         marginTop: vh * 5,
