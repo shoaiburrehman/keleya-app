@@ -11,5 +11,6 @@ export const images = {
 export const icons = {
   hidden: require('./icons/hidden.png'),
   visible: require('./icons/visible.png'),
-  leftArrow: require('./icons/left-arrow.png')
+  leftArrow: require('./icons/left-arrow.png'),
+  bell: require('./icons/bell.png')
 }

@@ -1,17 +1,14 @@
 import React, { useState, useRef } from 'react';
-import {View, Text, Image, TouchableOpacity, FlatList, ImageBackground, StatusBar} from 'react-native';
-import Carousel, {Pagination} from 'react-native-snap-carousel';
+import {View, Text} from 'react-native';
 import styles from './styles';
-import { screenOptions } from './data';
-import { vh, vw } from '../../themes/units';
 import { images } from '../../assets';
 import GeneralButton from '../../components/GeneralButton';
-import LinkButton from '../../components/LinkButton';
 import LayoutWrapper from '../../components/LayoutWrapper';
 import InputField from '../../components/InputField';
+import NavigationRoutes from '../../navigations/NavigationRoutes';
 
 
-const SignIn = () => {
+const SignIn = (props) => {
     const [email, setEmail] = useState<string>('');
     const [password, setPassword] = useState<string>('');
 
@@ -38,6 +35,7 @@ const SignIn = () => {
                     text={'Log in'}
                     style={[styles.btn]}
                     textStyle={styles.btnText}
+                    onPress={() => props?.navigation.navigate(NavigationRoutes.SUCCESS)}
                 />
             </View>
         </LayoutWrapper>

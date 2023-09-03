@@ -7,7 +7,6 @@ import {
 import styles from "./styles"
 
 type Props = {
-    switchContainer: {}
     checkboxText: string
     handleCheck: () => void;
     value?: boolean
@@ -15,7 +14,7 @@ type Props = {
 
 const Checkbox: React.FC<Props> = (props: Props) => {
     return(
-        <View style={[styles.switchContainer, props?.switchContainer]}>
+        <View style={[styles.switchContainer]}>
             <TouchableOpacity style={styles.touchableCheck} onPress={props?.handleCheck}>
                 {props?.value && <View style={styles.innerCheckbox} /> }
             </TouchableOpacity>

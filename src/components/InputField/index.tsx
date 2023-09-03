@@ -11,38 +11,15 @@ interface Props {
   onPress?: () => void;
   secureTextEntry: boolean;
   notRequired: boolean;
-  title: string;
+  value: string;
   keyboardType: KeyboardType;
   titleTextStyle: {};
   textInputContainer: {};
   textInputStyle: {};
   icon: any;
-  onFieldTypePress?: () => void;
+  onChangeText: () => void;
   placeholder: string;
 }
-
-const options = [
-  {
-    label: 'Fields',
-    value: null,
-  },
-  {
-    label: 'Text',
-    value: 'TEXT',
-  },
-  {
-    label: 'Date',
-    value: 'DATE',
-  },
-  {
-    label: 'Checkbox',
-    value: 'CHECKBOX',
-  },
-  {
-    label: 'Number',
-    value: 'NUMBER',
-  },
-];
 
 const InputField = React.forwardRef((props: Props, ref: Ref) => {
   const [isShow, setIsShow] = useState(false);

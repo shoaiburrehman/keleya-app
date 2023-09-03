@@ -20,7 +20,7 @@ const navigationOptions = (navProps: any) => {
 const getHeaderStyle = (props: any) => {
   return {
     shadowColor: 'transparent',
-    backgroundColor: 'transparent',
+    backgroundColor: Colors.WHITE,
     height: 14 * vh,
     maxHeight: 20 * vh,
     elevation: 0, // remove shadow on Android
@@ -33,7 +33,7 @@ const getTitle = (props: any) => {
   return (
     <View style={styles.logoView}>
       <Text style={styles.titleTextStyle}>
-        {categoryName ? categoryName : props?.route?.name}
+        {""}
       </Text>
     </View>
   );

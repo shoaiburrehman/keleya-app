@@ -1,18 +1,15 @@
-import React, { useState, useRef } from 'react';
-import {View, Text, Image, TouchableOpacity, FlatList, ImageBackground, StatusBar} from 'react-native';
-import Carousel, {Pagination} from 'react-native-snap-carousel';
+import React, { useState } from 'react';
+import {View, Text} from 'react-native';
 import styles from './styles';
-import { screenOptions } from './data';
-import { vh, vw } from '../../themes/units';
 import { images } from '../../assets';
 import GeneralButton from '../../components/GeneralButton';
-import LinkButton from '../../components/LinkButton';
 import LayoutWrapper from '../../components/LayoutWrapper';
 import InputField from '../../components/InputField';
 import Checkbox from '../../components/CheckboxButton';
+import NavigationRoutes from '../../navigations/NavigationRoutes';
 
 
-const SignUp = () => {
+const SignUp = (props) => {
     const [email, setEmail] = useState<string>('');
     const [password, setPassword] = useState<string>('');
     const [isPrivacyEnabled, setIsPrivacyEnabled] = useState(false);
@@ -55,6 +52,7 @@ const SignUp = () => {
                     text={'Create account'}
                     style={[styles.btn]}
                     textStyle={styles.btnText}
+                    onPress={() => props?.navigation.navigate(NavigationRoutes.NAME)}
                 />
             </View>
         </LayoutWrapper>
